@@ -28,4 +28,4 @@
 
 ### After running the project, you must go to the browser and type the following link: [http://localhost:8080](http://localhost:8080/)
 ###### Done!
-![image](https://github.com/AlexLopezz/BootcampAWSoftware/assets/90531107/8836ab56-50c1-46b7-af12-7238afb9d7bd)
+![image](https://github.com/AlexLopezz/docker.bootcamp.aws-software/assets/90531107/d6ad9cd9-fda9-403a-993b-c04ec992b0a7)
