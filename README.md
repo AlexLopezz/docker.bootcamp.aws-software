@@ -17,14 +17,14 @@
 * ```$ docker run -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=myDB --rm --name mariadb mariadb:11.2 ```
 #### do you want to stop the mariadb container? ``` docker stop mariadb ```
 ### Run project on IntelliJ 
-* Terminal: *Open a new terminal and exec this command*
+* Terminal: *Open a new terminal and exec this commands:*
     * ```$ git clone https://github.com/AlexLopezz/BootcampAWSoftware.git ```
     * ```$ cd BootcampAWSoftware/docker_springbootMVC_DB-CRUD ``` 
     * ```$ mvn clean spring-boot:run ```
   #### do you want to stop the project? ``` ctrl + c ```
 * IntelliJ Graphical Option:
 
-[Run SpringBoot project.webm](https://github.com/AlexLopezz/BootcampAWSoftware/assets/90531107/8214495f-2dd1-48d0-bad9-4b97020714e9)
+[Run project-IntelliJ.webm](https://github.com/AlexLopezz/docker.bootcamp.aws-software/assets/90531107/73635634-707e-4492-ab9b-df521878078e)
 
 ### After running the project, you must go to the browser and type the following link: [http://localhost:8080](http://localhost:8080/)
 ###### Done!
