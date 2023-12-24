@@ -11,11 +11,21 @@
   * mariadb:11.2
 
 # How to run it? 
-### Docker - mariadb
-*Open a new terminal and exec this commands:*
+### Docker - mariadb: Two ways!
+
+##### 1) Through a mariadb docker image (RECOMMENDED)
 * ```$ docker pull mariadb:11.2 ```
 * ```$ docker run -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=myDB --rm --name mariadb mariadb:11.2 ```
+
+##### 2) Through a dockerfile:
+* ```$ docker pull mariadb:11.2 ```
+* ```$ git clone https://github.com/AlexLopezz/BootcampAWSoftware.git ```
+* ```$ cd BootcampAWSoftware/docker_springbootMVC_DB-CRUD ```
+* ```$ docker build -t custom-mariadb:11.2 . ```
+* ```$ docker run -d -p 3306:3306 custom-mariadb:11.2 ```
+
 #### do you want to stop the mariadb container? ``` docker stop mariadb ```
+
 ### Run project on IntelliJ 
 * Terminal: *Open a new terminal and exec this commands:*
     * ```$ git clone https://github.com/AlexLopezz/BootcampAWSoftware.git ```
