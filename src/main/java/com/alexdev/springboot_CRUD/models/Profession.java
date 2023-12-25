@@ -3,7 +3,7 @@ package com.alexdev.springboot_CRUD.models;
 import jakarta.persistence.*;
 import lombok.*;
 
-@Entity
+@Entity(name = "db_profession")
 @Getter @Setter
 @ToString
 @AllArgsConstructor

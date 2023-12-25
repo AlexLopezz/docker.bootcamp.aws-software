@@ -1,12 +1,10 @@
 version: '3.1'
 
 services:
-    db:
-      container_name: compose-docker-mariadb
-      image: mariadb:11.2
-      restart: always
-      environment:
-        MARIADB_DATABASE: myDB
-        MARIADB_ROOT_PASSWORD: root
+    app:
+      container_name: compose-spring-boot-app
+      build:
+        context: .
+        dockerfile: Dockerfile
       ports:
-        - "3306:3306"
+        - "8080:8080"

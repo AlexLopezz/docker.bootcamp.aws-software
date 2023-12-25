@@ -17,7 +17,7 @@
 		<java.version>17</java.version>
 		<spring.version>3.1.2</spring.version>
 		<lombok.version>1.18.24</lombok.version>
-		<mariadb-client.version>1.5.7</mariadb-client.version>
+		<h2.version>2.2.220</h2.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -52,9 +52,9 @@
 		</dependency>
 
 		<dependency>
-			<groupId>org.mariadb.jdbc</groupId>
-			<artifactId>mariadb-java-client</artifactId>
-			<version>${mariadb-client.version}</version>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<version>${h2.version}</version>
 		</dependency>
 
 	</dependencies>

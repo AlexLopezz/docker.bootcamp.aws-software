@@ -1,4 +1,5 @@
-FROM mariadb:11.2
+FROM openjdk:17.0
 
-ENV MYSQL_DATABASE=myDB
-ENV MYSQL_ROOT_PASSWORD=root
+COPY "./target/docker_springbootMVC-DB_CRUD-0.0.1-SNAPSHOT.jar" "app.jar"
+ENTRYPOINT ["java", "-jar","app.jar"]
+EXPOSE 8080

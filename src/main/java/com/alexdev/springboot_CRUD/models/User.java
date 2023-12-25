@@ -10,7 +10,7 @@ import org.springframework.format.annotation.DateTimeFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-@Entity
+@Entity(name="db_user")
 @Builder
 @ToString
 @Getter @Setter
