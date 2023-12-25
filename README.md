@@ -27,4 +27,4 @@
 
 ### After running the spring boot container, you must go to the browser and type the following link: [http://localhost:8080](http://localhost:8080/)
 ###### Done!
-![image](https://github.com/AlexLopezz/docker.bootcamp.aws-software/assets/90531107/d6ad9cd9-fda9-403a-993b-c04ec992b0a7)
+![image](https://github.com/AlexLopezz/docker.bootcamp.aws-software/assets/90531107/023d7400-5aba-438b-9558-9746ca389771)
