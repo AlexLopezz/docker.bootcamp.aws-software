@@ -11,7 +11,7 @@
   * mariadb:11.2
 
 # How to run it? 
-### Docker - mariadb: Two ways!
+### Docker - mariadb: Three ways!
 
 ##### 1) Through a mariadb docker image (RECOMMENDED)
 * ```$ docker pull mariadb:11.2 ```
@@ -24,8 +24,16 @@
 * ```$ docker build -t custom-mariadb:11.2 . ```
 * ```$ docker run -d -p 3306:3306 custom-mariadb:11.2 ```
 
-#### do you want to stop the mariadb container? ``` docker stop mariadb ```
+##### 3) Through a docker-compose:
+* ```$ docker pull mariadb:11.2 ```
+* ```$ git clone https://github.com/AlexLopezz/BootcampAWSoftware.git ```
+* ```$ cd BootcampAWSoftware/docker_springbootMVC_DB-CRUD ```
+* ```$ docker-compose up -d ```
 
+#### do you want to stop the mariadb container? ``` docker stop compose-docker-mariadb ```
+
+  * If you want **remove a docker image**: docker rmi **'name-docker-image'**
+    * Problems? Is necessary stop the container that use this image: docker rm **'id-container/name-container'**
 ### Run project on IntelliJ 
 * Terminal: *Open a new terminal and exec this commands:*
     * ```$ git clone https://github.com/AlexLopezz/BootcampAWSoftware.git ```
