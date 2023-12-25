@@ -11,7 +11,7 @@ public class HomeController {
     @GetMapping
     public String helloView(Model model){
         model.addAttribute("headerPage", "Home Page");
-        model.addAttribute("title", "Welcome to my Spring MVC mariadb-CRUD");
+        model.addAttribute("title", "Welcome to my Spring MVC db-CRUD");
 
         return "index";
     }
