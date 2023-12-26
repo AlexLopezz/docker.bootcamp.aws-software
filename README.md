@@ -11,16 +11,19 @@
 * H2-database 2.2.220
 
 # How to run it?
-### Docker - project: Two ways!
+**Open a new terminal and exec this commands:**
+* ```$ git clone https://github.com/AlexLopezz/docker.bootcamp.aws-software.git ```
+* ```$ cd docker.bootcamp.aws-software/ ```
 
+### Docker - project: Two ways!
 ##### 1) Through a dockerfile:
-* ```$ mvn clean install ```
+* ```$ mvn clean package ```
 * ```$ docker build -t spring-boot-app . ```
 * ```$ docker run -d --name docker-spring-boot -p 8080:8080 spring-boot-app ```
 #### do you want to stop the project container? ``` docker stop docker-spring-boot ```
 
 ##### 2) Through a docker-compose:
-* ```$ mvn clean install ```
+* ```$ mvn clean package ```
 * ```$ docker-compose up -d --build ```
 
 #### do you want to stop the project container? ``` docker stop compose-spring-boot-app ```
