@@ -1,0 +1,19 @@
+version: '3.9'
+services:
+  spring-boot-app:
+    container_name: compose-spring-boot
+    image: compose-spring-boot:v1.0
+    build: .
+    ports:
+      - '8080:8080'
+    depends_on:
+      - mariadb-database
+
+  mariadb-database:
+    container_name: compose-mariadb
+    image: mariadb:11.2
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: myDB
+    ports:
+      - '3306:3306'
