@@ -1,4 +1,4 @@
-# Welcome to my SpringBoot MVC DB CRUD!
+# Welcome to my SpringBoot MVC maria-DB CRUD!
 ## Technologies used:
 * Java openjdk-17
 * IntelliJ CE
@@ -10,25 +10,17 @@
 * Docker
 
 # How to run it?
-* ```$ docker pull mariadb:11.2 ```
-* ```$ git clone https://github.com/AlexLopezz/BootcampAWSoftware.git ```
-* ```$ cd BootcampAWSoftware/docker_springbootMVC_DB-CRUD ```
+**Open a new terminal and exec this commands:**
+* ```$ git clone https://github.com/AlexLopezz/docker.bootcamp.aws-software.git ```
+* ```$ cd docker.bootcamp.aws-software/ ```
+* ```$ mvn clean package ```
 * ```$ docker-compose up -d ```
-
-#### do you want to stop the mariadb container? ``` docker stop compose-docker-mariadb ```
-
-  * If you want **remove a docker image**: docker rmi **'name-docker-image'**
-    * Problems? Is necessary stop the container that use this image: docker rm **'id-container/name-container'**
-### Run project on IntelliJ 
-* Terminal: *Open a new terminal and exec this commands:*
-    * ```$ git clone https://github.com/AlexLopezz/BootcampAWSoftware.git ```
-    * ```$ cd BootcampAWSoftware/docker_springbootMVC_DB-CRUD ``` 
-    * ```$ mvn clean spring-boot:run ```
-  #### do you want to stop the project? ``` ctrl + c ```
-* IntelliJ Graphical Option:
-
-[Run project-IntelliJ.webm](https://github.com/AlexLopezz/docker.bootcamp.aws-software/assets/90531107/73635634-707e-4492-ab9b-df521878078e)
 
 ### After running the project, you must go to the browser and type the following link: [http://localhost:8080](http://localhost:8080/)
 ###### Done!
 ![image](https://github.com/AlexLopezz/docker.bootcamp.aws-software/assets/90531107/d6ad9cd9-fda9-403a-993b-c04ec992b0a7)
+
+#### Do you want to stop container? 
+* ``` docker-compose stop ```
+#### Do you want to remove container? 
+* ``` docker-compose down ```
