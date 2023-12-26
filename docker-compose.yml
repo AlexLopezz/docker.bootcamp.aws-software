@@ -1,12 +1,26 @@
-version: '3.1'
-
+version: '3.9'
 services:
-    db:
-      container_name: compose-docker-mariadb
-      image: mariadb:11.2
-      restart: always
-      environment:
-        MARIADB_DATABASE: myDB
-        MARIADB_ROOT_PASSWORD: root
-      ports:
-        - "3306:3306"
+  spring-boot-app:
+    container_name: compose-spring-boot
+    image: compose-spring-boot:v1.0
+    build: .
+    ports:
+      - '8080:8080'
+    networks:
+      - custom-network
+    depends_on:
+      - mariadb-database
+
+  mariadb-database:
+    container_name: compose-mariadb
+    image: mariadb:11.2
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: myDB
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+    ports:
+      - '3306:3306'
+networks:
+  custom-network:
+    driver: bridge
